@@ -89,3 +89,124 @@ button i {
   font-size: 20px;
   padding-right: 8px;
 }
+
+/* about section */
+#about-main {
+  max-width: 1140px;
+  margin: 120px auto;
+}
+.about {
+  background-color: #fff6ef;
+  text-align: center;
+  padding: 120px 140px;
+}
+.about h1 {
+  font-size: 1.9vw;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.about p {
+  color: rgb(108, 108, 108);
+  padding-bottom: 12px;
+}
+.about-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-info {
+  padding: 40px 25px;
+}
+.about-info h4 {
+  color: rgb(29, 29, 29);
+}
+.what-i-do-container {
+  width: 1000px;
+  margin: 50px auto;
+}
+.what-do-header {
+  width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+.what-do-header h1 {
+  font-size: 1.9vw;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.skills {
+  display: flex;
+}
+.skill {
+  background-color: #ffffff;
+  padding: 25px 20px;
+  margin: 25px 15px;
+  /* box-shadow: 0px 0px 2px 100px black; */
+  -moz-box-shadow: 0 0 5px #999;
+  -webkit-box-shadow: 0 0 5px #999;
+  box-shadow: 0 0 5px #999;
+}
+.skill h3 {
+  padding: 15px 0;
+  color: rgb(29, 29, 29);
+}
+.skill p {
+  font-size: 1vw;
+  color: rgb(108, 108, 108);
+}
+
+/* summary of resume section */
+.resume-container {
+  display: flex;
+}
+.resume {
+  margin: 50px auto;
+  max-width: 1000px;
+  margin-top: 30px;
+}
+.resume h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.9vw;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.education-container h2,
+.experience-container h2 {
+  font-weight: 500;
+  color: #383838;
+  padding-bottom: 15px;
+}
+.education-content h3,
+.experience-content h3 {
+  color: #4c4c4c;
+  font-size: 1.4vw;
+}
+.education-content h4,
+.experience-content h4 {
+  color: #4c4c4c;
+  font-size: 1.2vw;
+  padding: 10px 0;
+  font-weight: 500;
+}
+.education-content p,
+.experience-content p {
+  color: #4c4c4c;
+  font-size: 1vw;
+  padding: 10px 0;
+}
+.education-content hr,
+.experience-content hr {
+  margin: 40px 0;
+}
+education-content,
+.experience-content {
+  margin: 0 20px;
+}
+.resume button .resumeBtn {
+  margin: 10px auto;
+}
+.download-cv {
+  text-align: center;
+  margin-bottom: 50px;
+}
