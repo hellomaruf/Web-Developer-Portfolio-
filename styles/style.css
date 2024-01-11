@@ -47,9 +47,10 @@ nav {
 }
 header {
   background-color: #fff6ef;
-  background-image: url("../images/header_bg.png");
+  background-image: url("../images/header_bg.png"),
+    url("../images/developer.png");
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: bottom right, top left;
 }
 .banner {
   padding: 150px 200px;
@@ -217,6 +218,7 @@ footer {
 footer .allfooterContent {
   width: 100%;
   display: flex;
+  justify-content: space-between;
 
   padding: 150px 150px;
   justify-content: center;
@@ -224,6 +226,7 @@ footer .allfooterContent {
 .footer-column {
   padding: 20px;
 }
+
 form input {
   width: 400px;
   height: 50px;
@@ -254,6 +257,111 @@ form textarea {
 .icon img {
   padding-right: 8px;
 }
-textarea ::placeholder {
-  padding: 10px 5px;
+.hide {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  /* footer section */
+  .allfooterContent {
+    flex-direction: column;
+  }
+  .footer-from {
+    padding: 0;
+  }
+  form input {
+    width: 300px;
+  }
+  .footer-column h2,
+  .footer-from h2 {
+    font-size: 4vw;
+    font-weight: 500;
+    padding-bottom: 5px;
+  }
+  .primaryn-btn {
+    font-size: 2vw;
+  }
+  .footer-column {
+    padding: 20px 0;
+  }
+  /* What i do */
+  .what-i-do-container {
+    width: auto;
+    padding: 0 50px;
+  }
+  .what-do-header {
+    width: auto;
+  }
+  .skills {
+    flex-direction: column;
+  }
+  .skill p {
+    font-size: 2.3vw;
+  }
+  .what-do-header h1 {
+    font-size: 4vw;
+  }
+  /* Resume section */
+  .resume-container {
+    flex-direction: column;
+    padding: 0 50px;
+  }
+  education-content,
+  .experience-content {
+    margin: 0;
+  }
+  .education-content h3,
+  .experience-content h3 {
+    font-size: 2.2vw;
+  }
+  .education-content h4,
+  .experience-content h4 {
+    font-size: 2vw;
+  }
+  .education-content p, .experience-content p {
+    font-size: 2vw;
+}
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  footer .allfooterContent {
+    flex-direction: column;
+  }
+  .footer-from {
+    padding: 0;
+  }
+  .footer-column {
+    padding-left: 0;
+  }
+  /* what i do */
+  .skills {
+    flex-direction: column;
+  }
+  .what-i-do-container {
+    width: auto;
+    padding: 0 50px;
+  }
+  .what-do-header {
+    width: auto;
+  }
+  .what-do-header h1 {
+    font-size: 3vw;
+  }
+  .skill p {
+    font-size: 2.2vw;
+  }
+  /* resume section */
+  .resume-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .footer-column {
+    width: 50%;
+  }
+  .footer-from {
+    width: 50%;
+    padding-left: 0;
+  }
 }
